@@ -1,0 +1,24 @@
+Chrome >= 80
+
+Firefox >= 72
+
+Safari >= 13.1
+
+Edge >= 80
+
+Samsung >= 11
+
+Opera >= 67
+
+supports es6-module
+
+not dead
+
+not IE 11
+not IE_Mob 11
+
+not Android < 5
+
+> 0.25%
+
+last 2 years

@@ -1,0 +1,35 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "targets": {
+            "browsers": [
+              "Chrome >= 80",
+              "Firefox >= 72",
+              "Safari >= 13.1",
+              "Edge >= 80"
+            ]
+          },
+          "useBuiltIns": false,
+          "corejs": false,
+          "modules": false,
+          "shippedProposals": true,
+          "bugfixes": true,
+          "loose": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["babel-plugin-transform-remove-console", { "exclude": ["error", "warn"] }]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "babel-plugin-transform-remove-console"
+      ]
+    }
+  }
+}

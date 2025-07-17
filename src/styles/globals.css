@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent layout shift from images */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Improve button and interactive element performance */
+  button,
+  [role="button"] {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  /* Prevent forced reflows */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Optimize for performance-critical elements */
+  .performance-optimized {
+    contain: layout style paint;
+    will-change: transform;
+  }
+
+  /* Optimize text changing elements */
+  .text-optimized {
+    will-change: contents;
+    contain: style;
+  }
+}
+
+@layer utilities {
+  /* Performance optimizations */
+  .will-change-auto {
+    will-change: auto;
+  }
+  
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .will-change-contents {
+    will-change: contents;
+  }
+  
+  .contain-layout {
+    contain: layout;
+  }
+  
+  .contain-paint {
+    contain: paint;
+  }
+
+  .contain-style {
+    contain: style;
+  }
+
+  .contain-size {
+    contain: size;
+  }
+
+  /* GPU acceleration */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Prevent forced reflows for animations */
+  .no-reflow {
+    contain: layout style paint;
+  }
+
+  /* Optimize frequently changing content */
+  .optimized-content {
+    contain: style;
+    will-change: contents;
+  }
+
+  /* Prevent layout thrashing on scroll */
+  .scroll-optimized {
+    contain: layout style paint;
+    will-change: transform;
+  }
+}
