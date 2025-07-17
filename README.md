@@ -1,40 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🛍️ My Shop Landing Page
 
-## Getting Started
+Modern and optimized **e-commerce landing page**, built using **Next.js** and focused on **performance, SEO, and responsiveness**. This project was developed as part of the **Buzzvel Front-End Developer Test 2025**, based on a Figma design.
 
-First, run the development server:
+🔗 **[Live Preview](https://my-shop-lading-page.vercel.app/)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tech Stack
+
+### Core
+
+* **Next.js 15.3.4** – SSR/SSG, SEO optimizations
+* **React 19 + TypeScript**
+* **Tailwind CSS 3.4** – Mobile-first utility-first styling
+* **Framer Motion** – Animations and interactions
+* **shadcn/ui + Radix UI** – Accessible and styled component system
+* **Lucide + React Icons** – Lightweight SVG icon sets
+
+---
+
+## 📐 Design & Responsiveness
+
+* Pixel-perfect implementation of both mobile and desktop Figma views
+* Responsive layout built with Tailwind’s utility classes
+* Mobile-first approach
+* Reusable components with variants using `class-variance-authority` and `tailwind-merge`
+
+---
+
+## 🎞️ Animations
+
+* Smooth fade-in and reveal animations using **Framer Motion**
+* Subtle transitions for buttons and call-to-action sections
+* Non-blocking and performance-friendly animation strategy
+
+---
+
+## ⚡ Performance Optimizations
+
+| Feature                         | Implemented | Notes                                            |
+| ------------------------------- | ----------- | ------------------------------------------------ |
+| Lazy loading via `dynamic()`    | ✅           | Non-critical sections load on demand             |
+| Optimized images (`next/image`) | ✅           | Hero image preloaded with `fetchpriority="high"` |
+| Code splitting                  | ✅           | Automatic vendor and UI lib separation           |
+| Tree-shaking + gzip             | ✅           | Final bundle \~180KB gzipped                     |
+| Cache strategy                  | ✅           | 1-year cache for static assets                   |
+
+---
+
+## 🔍 SEO & Accessibility
+
+* Semantic HTML tags (`section`, `main`, `header`, etc.)
+* Meta tags handled via `<Head>`
+* Great mobile experience with performance focus
+* Accessibility with keyboard navigation and ARIA roles
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # Reusable components (layout, UI, icons)
+├── templates/         # Landing page templates and sections
+├── pages/             # Routing (Next.js Pages Router)
+├── styles/            # Global styles
+└── lib/               # Helpers and utilities
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+# Install dependencies
+npm install
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+# Run dev server
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Build for production
+npm run build
 
-## Learn More
+# Analyze bundle size
+npm run analyze
+```
 
-To learn more about Next.js, take a look at the following resources:
+Visit [http://localhost:3000](http://localhost:3000) to see it running locally.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📊 Lighthouse Performance Scores
 
-## Deploy on Vercel
+* **Performance:** 70-80
+* **Accessibility:** 100
+* **Best Practices:** 100
+* **SEO:** 100
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🧑‍💻 Author
+
+**Matheus Augusto Silva dos Santos**
+📧 [augustomatehus233@gmail.com](mailto:augustomatehus233@gmail.com)
+🌐 [LinkedIn](https://www.linkedin.com/in/matheuzaugusto/)
