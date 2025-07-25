@@ -1,6 +1,6 @@
 # 🛍️ My Shop Landing Page
 
-Modern and optimized **e-commerce landing page**, built using **Next.js** and focused on **performance, SEO, and responsiveness**. This project was developed as part of the **Buzzvel Front-End Developer Test 2025**, based on a Figma design.
+Modern and optimized **e-commerce landing page**, built using **Next.js** and focused on **performance, SEO, and responsiveness**. This project was developed based on a Figma design.
 
 🔗 **[Live Preview](https://my-shop-lading-page.vercel.app/)**
 
